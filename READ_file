@@ -1,0 +1,8 @@
+Install vcftools
+Install bgzip and tabix 
+Make sure bgzip and tabix are in the same directory of vcftools
+run the following commands:
+
+bgzip -c file.vcf > file.vcf.gz
+tabix -p vcf file.vcf.gz
+vcf-merge /vcf/*.vcf.gz > /vcf/out.vcf
